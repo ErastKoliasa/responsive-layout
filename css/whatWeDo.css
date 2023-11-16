@@ -1,0 +1,31 @@
+.whatWeDo__content-first {
+    height: 70px;
+    background-color: red;
+}
+
+.whatWeDo__content-second {
+    height: 180px;
+    background-color: green;
+}
+
+.whatWeDo__content-first,
+.whatWeDo__content-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 360px) {
+    .whatWeDo__content-second {
+        height: 70px;
+    }
+
+    .container__whatWeDo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+    }
+}
+
